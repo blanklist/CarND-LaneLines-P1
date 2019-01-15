@@ -29,6 +29,9 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 This website's explanation of the draw_lines() function was very helpful in developing my understanding: https://peteris.rocks/blog/extrapolate-lines-with-numpy-polyfit/
 
+SECOND SUBMISSION NOTE:
+My second submission includes experimentation with increasing the values of max_line_gap, min_line_len, and threshold for the HoughLinesP function in order to get smoother, more consistent lines in the videos. I also attempted to improve the right line creation in the draw_lines() function but needed to roll back those changes. I settled on small increases in the settings mentioned above and my first submission for the draw_lines function.
+
 ### 2. Identify potential shortcomings with your current pipeline
 
 One shortcoming of this pipeline is that it deals with straight lines. As soon as a curve is introduced, the lines will not fit quite right. Extreme curves would introduce danger as the hardcoded y points would be well outside of the actual lane.
